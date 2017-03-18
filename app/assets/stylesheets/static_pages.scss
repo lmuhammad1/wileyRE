@@ -1,3 +1,35 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.full-width {
+  max-width: 1400px;
+}
+
+$text-color: #fff;
+
+// footer CSS
+
+.footer {
+  background-color: #2980b9;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: $text-color;
+  i {
+    font-size: 100px;
+  }
+}
+
+.footer {
+  h4 {
+    color: $text-color;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+	}
+}
+
+#properties {
+	padding-left: 0px;
+}
+
