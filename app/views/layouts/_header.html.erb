@@ -10,6 +10,32 @@
 				<li><a href="#">Recent Sales</a></li>
 				<li><a href="#">Affordable Housing</a></li>
 				<li><a href="#">Contact</a></li>
+				<li>
+					<% if current_user.nil? %>
+					<%= link_to new_user_session_path, class: 'login-button' do %>Sign in<% end %>
+					<% else %>
+					<%= link_to static_pages_about_path, class: 'login-button' do %>Go to App<% end %>
+					<% end %>
+				</li>
+				<li>
+				<% if user_signed_in? %>
+				<button class="dropdown button" type="button" data-toggle="drop1">Welcome User</button>
+				<div class="dropdown-pane" id="drop1" data-dropdown data-auto-focus="true">
+					<ul>
+						<li><%= link_to('Edit registration', edit_user_registration_path) %></li>
+						<li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+					</ul>
+				</div>
+				<% else %>
+				<button class="dropdown button" type="button" data-toggle="drop1">Join</button>
+				<div class="dropdown-pane" id="drop1" data-dropdown data-auto-focus="true">
+					<ul>
+						<li><%= link_to('Register', new_user_registration_path)  %></li>
+						<li><%= link_to('Login', new_user_session_path)  %></li>
+					</ul>
+				</div>
+				<% end %>
+				</li>
 			</ul>
 		</div>
 	</div>
