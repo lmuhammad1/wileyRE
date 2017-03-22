@@ -1,3 +1,10 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.hero {
+    background-image: url('/assets/city-bg.jpg');
+    background-position: top center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
