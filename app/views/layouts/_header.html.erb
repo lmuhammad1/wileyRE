@@ -1,22 +1,16 @@
 <div class="top-bar">
-	<div class="row">
+<div class="wrap">
 		<div class="top-bar-left">
-			<a class="menu-logo"><%= image_tag 'wiley_logo.png', class: "large-4 columns" %></a>
+			<a class="menu-logo"><%= image_tag 'wiley-logo.png', class: "logo" %></a>
 		</div>
 		<div class="top-bar-right">
 			<ul class="menu">
 				<li><a href="#">About</a></li>
 				<li><a href="#">Listings</a></li>
-				<li><a href="#">Recent Sales</a></li>
+				<li><a href="#">Government Services</a></li>
 				<li><a href="#">Affordable Housing</a></li>
+				<li><a href="#">Careers</a></li>
 				<li><a href="#">Contact</a></li>
-				<li>
-					<% if current_user.nil? %>
-					<%= link_to new_user_session_path, class: 'login-button' do %>Sign in<% end %>
-					<% else %>
-					<%= link_to static_pages_about_path, class: 'login-button' do %>Go to App<% end %>
-					<% end %>
-				</li>
 				<li>
 				<% if user_signed_in? %>
 				<button class="dropdown button" type="button" data-toggle="drop1">Welcome User</button>
@@ -38,5 +32,5 @@
 				</li>
 			</ul>
 		</div>
-	</div>
+</div>
 </div>
