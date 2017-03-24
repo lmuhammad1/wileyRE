@@ -91,3 +91,45 @@ div .dropdown.button {
 hr {
     margin: 60px 0px;
 }
+
+
+ .full-width {
+  max-width: 1400px;
+}
+
+.footer {
+  background-color: #7F7F7F;
+  padding: 2px 2rem;
+  text-align: left;
+  color: #fff;
+}
+
+.footer i {
+  font-size: 100px;
+}
+
+.footer h4 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.footer p, .footer a {
+  font-weight: 300;
+  font-size: .8em;
+  color: #fff;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-links li {
+  margin-top: .25em;
+  margin-left: -1.2em;
+  text-align: left;
+
+}
