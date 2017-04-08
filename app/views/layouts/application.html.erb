@@ -11,7 +11,7 @@
   
 </head>
 
-<body>
+<body id="page-top">
   <% unless flash.empty? %>
   <script type="text/javascript">
     <% flash.each do |f| %>
@@ -21,11 +21,16 @@
   </script>
   <% end %>
 
-  <%= render "layouts/header" %>
+  <% if current_page?(root_path) %>
+    <%= render 'layouts/home_header' %>
+  <% else %>
+    <%= render 'layouts/header' %>
+  <% end %>
+
 
 
   <%= yield %>
-  <%= render "layouts/footer" %>
 
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </body>
 </html>
