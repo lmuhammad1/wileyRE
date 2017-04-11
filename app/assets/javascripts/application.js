@@ -14,10 +14,13 @@
 //= require jquery_ujs
 //= require toastr
 //= require magnific-popup
-//= require scrollReveal
+//= require scrollreveal
 //= require jquery.easing
 //= require turbolinks
 //= require_tree .
+
+
+window.sr = ScrollReveal();
 
 $(document).on('turbolinks:load', function() {
 
@@ -53,7 +56,7 @@ $(document).on('turbolinks:load', function() {
 
 
     // Initialize and Configure Scroll Reveal Animation
-    window.sr = ScrollReveal();
+    
 
     sr.reveal('.sr-icons', {
         duration: 600,

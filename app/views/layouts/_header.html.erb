@@ -1,22 +1,22 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-inverse">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Wiley Real Estate</a>
+            <%= link_to "Wiley Real Estate", root_path, class: "navbar-brand page-scroll" %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><%= link_to "About", "#about", class: "page-scroll" %></li>
-                <li><%= link_to "Services", "#services", class: "page-scroll" %></li>
-                <li><%= link_to "Contact", "#contact", class: "page-scroll" %></li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
-                </li>
+                <li><%= link_to "About", static_pages_about_path %></li>
+                <li><%= link_to "Government Services", static_pages_government_path %></li>
+                <li><%= link_to "Affordable Housing", static_pages_affordable_housing_path %></li>
+                <li><%= link_to "Clients", static_pages_clients_path %></li>
+                <li><%= link_to "Careers", static_pages_careers_path %></li>
+                <li><%= link_to "Contact", static_pages_contacts_path %></li>
                 <% if user_signed_in? %>
                 <li><%= link_to "Admin", rails_admin_path, class: "admin" %></li>
                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email %><b class="caret"></b></a>

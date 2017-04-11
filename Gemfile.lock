@@ -170,8 +170,6 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
-    scrollreveal-rails (0.0.1)
-      railties (>= 3.1)
     scrollspy-rails (1.0.3)
       railties
     spring (2.0.1)
@@ -230,7 +228,6 @@ DEPENDENCIES
   rails_admin
   remotipart!
   sass-rails (~> 5.0)
-  scrollreveal-rails
   scrollspy-rails
   spring
   spring-watcher-listen (~> 2.0.0)
